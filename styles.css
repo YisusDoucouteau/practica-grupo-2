@@ -1,0 +1,76 @@
+/* Foco visible. Responsive simple. */
+:root{
+  --bg:#0b1225; --panel:#0f1a3a; --text:#eef3ff; --muted:#b7c4ea;
+  --accent:#5bd0ff; --focus:#ffd24a; --border:#22305e; --max:1120px;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background:var(--bg); color:var(--text); line-height:1.6;
+  display:flex; flex-direction:column; align-items:center;
+}
+
+/* Landmarks */
+.site-header, main, .site-footer{width:100%;max-width:var(--max);padding:1rem}
+
+/* Skip link */
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:1rem;top:1rem;background:#000;padding:.5rem 1rem;border:2px solid var(--focus);z-index:10}
+
+/* Header */
+.brand{display:flex;align-items:center;gap:.6rem}
+.logo{width:36px;height:36px;color:var(--accent)}
+h1{margin:0;font-size:1.7rem}
+.primary-nav ul{list-style:none;display:flex;gap:1rem;margin:.6rem 0 0;padding:0;flex-wrap:wrap}
+a{color:var(--accent);text-decoration:underline}
+a:focus{outline:3px solid var(--focus);outline-offset:2px}
+
+/* Search form with label visible */
+.site-search{display:flex;gap:.5rem;align-items:center;margin-top:.6rem}
+.site-search label{font-weight:600}
+.site-search input{padding:.5rem .6rem;border-radius:10px;border:1px solid var(--border);background:#0b132c;color:var(--text)}
+.site-search button{padding:.55rem .9rem;border-radius:10px;border:1px solid var(--border);background:var(--accent);color:#04121a;font-weight:700}
+
+/* Hero */
+.hero{
+  margin:1rem 0; padding:2rem; border-radius:18px;
+  background:linear-gradient(135deg,#121b3f 0%,#0f1633 60%,#0b1225 100%);
+  border:1px solid var(--border);
+}
+.lead{color:var(--muted);max-width:65ch}
+.cta{display:inline-block;margin-top:.9rem;padding:.7rem 1rem;border-radius:12px;background:var(--accent);color:#05121a;text-decoration:none;font-weight:800}
+
+/* Content */
+.intro h2,.intro h3{margin:.6rem 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.6rem}
+.card{
+  display:block;padding:1rem;border-radius:14px;background:var(--panel);
+  border:1px solid var(--border);color:var(--text);text-decoration:none;
+}
+.card h4{margin:.2rem 0}
+.card p{margin:0;color:var(--muted)}
+.card:hover{border-color:var(--accent)}
+.timeline{margin:.6rem 0 0 1rem}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border);color:var(--muted)}
+
+/* Responsive */
+@media (max-width:920px){ .cards{grid-template-columns:1fr 1fr} }
+@media (max-width:560px){
+  .primary-nav ul{gap:.6rem}
+  .site-search{flex-direction:column;align-items:stretch}
+  .cards{grid-template-columns:1fr}
+  .hero{padding:1.25rem}
+}
+
+/* foco */
+:focus {outline-style:solid}
+input:focus, button:focus, .card:focus {
+  outline:3px solid var(--focus);
+  outline-offset:2px;
+}
+.card { display:block } 
+a:hover, .card:hover { border-color: var(--accent); }
