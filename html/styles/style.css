@@ -1,0 +1,55 @@
+*{
+    font-family:lato;
+    
+}
+h1{
+    font-size: 45px;
+    margin-right: 250px;
+    justify-items:center ;
+}   
+hr{
+    border: none;
+    height: 4px;
+    background-color: gray;
+    margin: 20px 0;
+    width: 100%;
+    margin-right: 250px;
+}
+.portada{
+    width:100%;
+   
+}
+.nombre{
+    font-style: italic;
+    margin-left: 10mm;
+    font-size:20px;
+}
+p{
+    margin-left: 60px;
+    font-size: 20px;
+    margin-right: 250px;
+}
+h2,h3{
+    margin-left: 40px;
+    font-size: 30px;
+    margin-right: 250px;
+}
+.backesqu{
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 250px;
+
+}
+.troyesqu{
+    width: 90%;
+    margin-left:40px ;
+    margin-right: 250px;
+}
+figure{
+    margin-left: 100px;
+    margin-right: 250px;
+}
+body{
+
+}
+
