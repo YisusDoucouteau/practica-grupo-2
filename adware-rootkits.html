@@ -1,31 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Adware y Rootkits — Impacto en el sistema</title>
-  <meta name="description" content="Qué es el adware y qué son los rootkits. Impacto, tipos y ejemplos.">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Qué es el adware y qué son los rootkits. Impacto, tipos y ejemplos.">
+    <meta property="og:type" content="article">
+    <title>Adware y Rootkits — Impacto en el sistema</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<a class="skip-link" href="#main">Saltar al contenido principal</a>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-<header class="site-header" role="banner">
-  <nav class="primary-nav" aria-label="Navegación principal">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="virus.html">Virus</a></li>
-      <li><a href="troyanos.html">Troyanos</a></li>
-      <li><a href="ransomware.html">Ransomware</a></li>
-      <li><a href="adware-rootkits.html" aria-current="page">Adware y Rootkits</a></li>
-      <li><a href="prevencion.html">Prevención</a></li>
-      <li><a href="credits.html">Créditos</a></li>
-    </ul>
-  </nav>
-</header>
+    <header class="site-header" role="banner">
+        <nav class="primary-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="virus.html">Virus</a></li>
+                <li><a href="troyanos.html">Troyanos</a></li>
+                <li><a href="ransomware.html">Ransomware</a></li>
+                <li><a href="adware-rootkits.html" aria-current="page">Adware y Rootkits</a></li>
+                <li><a href="prevencion.html">Prevención</a></li>
+                <li><a href="credits.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="main-content" role="main">
+        <h1>Adware y Rootkits: Análisis de Seguridad Informática</h1>
 
-<footer class="site-footer" role="contentinfo">
-  <p>Proyecto Grupo 2.</p><p><a href="#main">Volver arriba</a></p>
-</footer>
+        <section id="adware" aria-labelledby="adware-heading">
+            <h2 id="adware-heading">Adware: Software Publicitario</h2>
+
+            <article aria-labelledby="adware-definicion">
+                <h3 id="adware-definicion">¿Qué es el Adware?</h3>
+                <p>El adware (advertising-supported software) es un tipo de software que automáticamente muestra,
+                    reproduce o descarga publicidad no deseada en dispositivos electrónicos. Aunque algunos adware son
+                    legítimos y se instalan con el consentimiento del usuario, muchos se consideran maliciosos cuando se
+                    instalan sin autorización explícita.</p>
+                <p>Este tipo de software genera ingresos a sus desarrolladores mediante la visualización forzada de
+                    anuncios, recopilación de datos de navegación y redirección del tráfico web hacia sitios
+                    específicos.</p>
+            </article>
+
+            <article aria-labelledby="adware-funcionamiento">
+                <h3 id="adware-funcionamiento">¿Cómo Funciona el Adware?</h3>
+                <p>El adware opera mediante diversos mecanismos técnicos que le permiten infiltrarse y persistir en los
+                    sistemas:</p>
+                <ul>
+                    <li><strong>Bundling:</strong> Se distribuye empaquetado con software gratuito legítimo,
+                        instalándose durante el proceso de instalación del programa principal</li>
+                    <li><strong>Inyección de código:</strong> Modifica navegadores web insertando scripts que muestran
+                        publicidad adicional en páginas visitadas</li>
+                    <li><strong>Extensiones maliciosas:</strong> Se instala como complemento del navegador con permisos
+                        amplios para modificar contenido web</li>
+                    <li><strong>Modificación de configuración:</strong> Cambia la página de inicio, motor de búsqueda
+                        predeterminado y configuración de DNS</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="adware-impacto">
+                <h3 id="adware-impacto">Impacto en los Sistemas</h3>
+                <p>El adware afecta significativamente el rendimiento y la seguridad de los dispositivos infectados:</p>
+                <ul>
+                    <li><strong>Degradación de rendimiento:</strong> Consume recursos del sistema (CPU, memoria RAM)
+                        causando lentitud general</li>
+                    <li><strong>Compromiso de privacidad:</strong> Rastrea hábitos de navegación, historial de búsquedas
+                        y datos personales</li>
+                    <li><strong>Vulnerabilidades de seguridad:</strong> Puede abrir puertas a malware más peligroso</li>
+                    <li><strong>Experiencia de usuario deteriorada:</strong> Pop-ups constantes, redirecciones no
+                        deseadas y contenido intrusivo</li>
+                    <li><strong>Consumo de ancho de banda:</strong> Descarga continuamente contenido publicitario</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="adware-ejemplos">
+                <h3 id="adware-ejemplos">Ejemplos Comunes y Casos Reales</h3>
+                <ul>
+                    <li><strong>Toolbars no solicitadas:</strong> Barras de herramientas como Ask Toolbar o Babylon que
+                        modifican búsquedas web</li>
+                    <li><strong>Pop-ups y pop-unders:</strong> Ventanas emergentes que aparecen encima o debajo del
+                        navegador</li>
+                    <li><strong>In-text advertising:</strong> Convierte palabras en enlaces publicitarios dentro de
+                        páginas web</li>
+                    <li><strong>Redirecciones automáticas:</strong> Desvía búsquedas hacia motores controlados por
+                        atacantes</li>
+                    <li><strong>Fireball:</strong> Adware chino que infectó 250 millones de computadoras en 2017</li>
+                    <li><strong>DollarRevenue:</strong> Conocido por descargar más malware tras la infección inicial
+                    </li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="adware-deteccion">
+                <h3 id="adware-deteccion">Señales de Infección por Adware</h3>
+                <ul>
+                    <li>Aparición súbita de anuncios en lugares inusuales</li>
+                    <li>Página de inicio del navegador cambiada sin autorización</li>
+                    <li>Lentitud notable en el sistema operativo</li>
+                    <li>Nuevas barras de herramientas o extensiones no instaladas por el usuario</li>
+                    <li>Redirecciones frecuentes a sitios web desconocidos</li>
+                    <li>Aumento en el consumo de datos de internet</li>
+                </ul>
+            </article>
+
+            <figure role="figure" aria-labelledby="adware-diagram">
+                <img src="images/adware-diagram.png"
+                    alt="Diagrama de flujo mostrando el ciclo de infección del adware: descarga de software gratuito, instalación oculta del adware, inyección en el navegador, recopilación de datos y despliegue de publicidad"
+                    width="800" height="500" loading="lazy">
+                <figcaption id="adware-diagram">Funcionamiento del adware en sistemas infectados</figcaption>
+            </figure>
+        </section>
+
+        <section id="rootkits" aria-labelledby="rootkits-heading">
+            <h2 id="rootkits-heading">Rootkits: Amenazas Ocultas del Sistema</h2>
+
+            <article aria-labelledby="rootkits-definicion">
+                <h3 id="rootkits-definicion">¿Qué son los Rootkits?</h3>
+                <p>Los rootkits son conjuntos de herramientas de software malicioso diseñados específicamente para
+                    obtener y mantener acceso privilegiado a un sistema informático mientras ocultan activamente su
+                    presencia. El término "rootkit" proviene de la combinación de "root" (usuario con máximos
+                    privilegios en sistemas Unix) y "kit" (conjunto de herramientas).</p>
+                <p>A diferencia de otros malware que buscan causar daño visible, los rootkits priorizan el sigilo y la
+                    persistencia. Operan a niveles profundos del sistema operativo, modificando componentes
+                    fundamentales para evadir detección por software de seguridad convencional.</p>
+            </article>
+
+            <article aria-labelledby="rootkits-tipos">
+                <h3 id="rootkits-tipos">Tipos de Rootkits</h3>
+                <ul>
+                    <li><strong>Rootkits de modo usuario:</strong> Operan con privilegios de aplicación normal, más
+                        fáciles de detectar pero también de implementar</li>
+                    <li><strong>Rootkits de modo kernel:</strong> Se integran en el núcleo del sistema operativo,
+                        extremadamente difíciles de detectar y eliminar</li>
+                    <li><strong>Bootkits:</strong> Infectan el sector de arranque del sistema, cargándose antes que el
+                        sistema operativo</li>
+                    <li><strong>Rootkits de firmware:</strong> Se alojan en el firmware del hardware, sobreviven incluso
+                        a reinstalaciones del sistema operativo</li>
+                    <li><strong>Rootkits de virtualización:</strong> Crean una capa de virtualización que ejecuta el
+                        sistema operativo como máquina virtual sin conocimiento del usuario</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="rootkits-funcionamiento">
+                <h3 id="rootkits-funcionamiento">Mecanismos de Funcionamiento</h3>
+                <p>Los rootkits emplean técnicas sofisticadas para mantener control y ocultación:</p>
+                <ul>
+                    <li><strong>Hooking de APIs:</strong> Interceptan llamadas del sistema para ocultar archivos,
+                        procesos y conexiones de red</li>
+                    <li><strong>Modificación de estructuras del kernel:</strong> Alteran tablas de procesos y
+                        controladores de dispositivos</li>
+                    <li><strong>Manipulación de DLL:</strong> Inyectan código malicioso en bibliotecas compartidas del
+                        sistema</li>
+                    <li><strong>Ocultación de tráfico de red:</strong> Filtran paquetes para esconder comunicaciones
+                        maliciosas</li>
+                    <li><strong>Persistencia multinivel:</strong> Implementan múltiples mecanismos de supervivencia y
+                        reinfección</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="rootkits-impacto">
+                <h3 id="rootkits-impacto">Impacto y Consecuencias en Sistemas</h3>
+                <p>La presencia de rootkits en un sistema tiene implicaciones severas para la seguridad:</p>
+                <ul>
+                    <li><strong>Control total del sistema:</strong> Los atacantes obtienen acceso administrativo
+                        completo e indetectable</li>
+                    <li><strong>Robo de información sensible:</strong> Captura de credenciales, datos bancarios y
+                        propiedad intelectual</li>
+                    <li><strong>Puerta trasera permanente:</strong> Permite acceso remoto continuo incluso después de
+                        "limpiezas" superficiales</li>
+                    <li><strong>Plataforma para otros ataques:</strong> Facilita la instalación de malware adicional
+                        (ransomware, spyware)</li>
+                    <li><strong>Evasión de seguridad:</strong> Desactiva o engaña a antivirus y sistemas de detección de
+                        intrusiones</li>
+                    <li><strong>Compromiso de integridad:</strong> Invalida la confianza en el sistema operativo
+                        completo</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="rootkits-ejemplos">
+                <h3 id="rootkits-ejemplos">Casos Históricos y Rootkits Notables</h3>
+                <ul>
+                    <li><strong>TDSS (TDL-4):</strong> Bootkit sofisticado que infectó millones de sistemas, resistente
+                        a reinstalaciones del SO</li>
+                    <li><strong>ZeroAccess:</strong> Rootkit de modo kernel usado para fraude publicitario y minería de
+                        Bitcoin, infectó más de 2 millones de PCs</li>
+                    <li><strong>Alureon (TDL-3):</strong> Interceptaba resultados de búsqueda e inyectaba publicidad
+                        maliciosa</li>
+                    <li><strong>Sony BMG Rootkit (2005):</strong> DRM controversial que comprometió millones de
+                        computadoras legítimamente</li>
+                    <li><strong>Stuxnet:</strong> Arma cibernética que incluía componentes rootkit para atacar
+                        instalaciones nucleares iraníes</li>
+                    <li><strong>Flame:</strong> Malware de espionaje gubernamental con capacidades rootkit
+                        extremadamente avanzadas</li>
+                    <li><strong>Necurs:</strong> Botnet masivo basado en rootkit usado para distribución de spam y
+                        ransomware</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="rootkits-deteccion">
+                <h3 id="rootkits-deteccion">Métodos de Detección</h3>
+                <ul>
+                    <li><strong>Análisis de comportamiento:</strong> Monitoreo de actividades anómalas del sistema</li>
+                    <li><strong>Verificación de integridad:</strong> Comparación de archivos del sistema con versiones
+                        conocidas</li>
+                    <li><strong>Análisis de memoria:</strong> Inspección directa de la RAM para detectar código oculto
+                    </li>
+                    <li><strong>Escáneres especializados:</strong> Herramientas como GMER, RootkitRevealer o
+                        Malwarebytes Anti-Rootkit</li>
+                    <li><strong>Análisis offline:</strong> Examen del disco desde otro sistema operativo limpio</li>
+                </ul>
+            </article>
+
+            <figure role="figure" aria-labelledby="rootkits-diagram">
+                <img src="images/rootkits-diagram.png"
+                    alt="Diagrama de arquitectura mostrando las diferentes capas donde operan los rootkits: desde el firmware hasta aplicaciones de usuario, con énfasis en la capa del kernel y técnicas de ocultación"
+                    width="800" height="500" loading="lazy">
+                <figcaption id="rootkits-diagram">Arquitectura de rootkits en diferentes niveles del sistema</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p>Proyecto Grupo 2.</p>
+        <p><a href="#main-content">Volver arriba</a></p>
+    </footer>
 </body>
 </html>
