@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mundo del Malware — Introducción y Guía</title>
+  <meta name="description" content="Introducción accesible al malware. Definición, historia y tipos principales. Sitio HTML5 con buenas prácticas de SEO y accesibilidad.">
+  <meta name="author" content="Practica Grupo 2">
+  <meta name="theme-color" content="#0b1225">
+  <meta property="og:title" content="Mundo del Malware — Introducción y Guía">
+  <meta property="og:description" content="Qué es malware, cómo funciona y cómo prevenirlo.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="22" fill="currentColor" opacity=".12"/>
+        <path d="M24 8l10 6v10l-10 6-10-6V14l10-6zm0 8l-6 3.6V24l6 3.6L30 24v-4.4L24 16z" fill="currentColor"/>
+      </svg>
+      <h1>Mundo del Malware</h1>
+    </div>
+
+    <nav class="primary-nav" aria-label="Navegación principal">
+     <ul>
+    <li><a aria-current="page" href="index.html">Inicio</a></li>
+    <li><a href="virus.html">Virus</a></li>
+    <li><a href="troyanos.html">Troyanos</a></li>
+    <li><a href="ransomware.html">Ransomware</a></li>
+    <li><a href="adware-rootkits.html">Adware y Rootkits</a></li>
+    <li><a href="prevencion.html">Prevención</a></li>
+    <li><a href="credits.html">Créditos</a></li>
+    </ul>
+    </nav>
+
+    <form class="site-search" role="search" aria-label="Búsqueda del sitio" action="#" method="get">
+      <label for="q">Buscar conceptos</label>
+      <input id="q" name="q" type="search" placeholder="Ej: gusano, rootkit">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main id="main" role="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Entiende el enemigo. Mejora tu defensa.</h2>
+      <p class="lead">Malware es software malicioso que daña, espía o extorsiona. Esta guía resume lo esencial con ejemplos claros.</p>
+      <a class="cta" href="#basicos">Ir a lo básico</a>
+    </section>
+    <article class="intro" aria-labelledby="que-es">
+      <header>
+        <h2 id="que-es">¿Qué es el malware?</h2>
+        <p>Conjunto de programas diseñados para ejecutar acciones no autorizadas en equipos y redes.</p>
+      </header>
+
+      <section id="basicos" aria-labelledby="tipos">
+        <h3 id="tipos">Tipos principales</h3>
+        <div class="cards" role="list">
+          <a class="card" role="listitem" href="virus.html">
+            <h4>Virus</h4>
+            <p>Se adjunta a archivos. Requiere acción del usuario.</p>
+          </a>
+          <a class="card" role="listitem" href="troyanos.html">
+            <h4>Troyanos</h4>
+            <p>Se hacen pasar por software legítimo. Abren puertas.</p>
+          </a>
+          <a class="card" role="listitem" href="ransomware.html">
+            <h4>Ransomware</h4>
+            <p>Cifra datos y exige pago por recuperarlos.</p>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="hist">
+        <h3 id="hist">Historia breve</h3>
+        <figure>
+          <img src="images/malware-linea-tiempo.svg" alt="Línea de tiempo de malware: Morris 1988, Melissa 1999, ILOVEYOU 2000, WannaCry 2017" width="900" height="240">
+          <figcaption>Hitos que cambiaron la seguridad informática.</figcaption>
+        </figure>
+        <ul class="timeline">
+          <li><strong>1988:</strong> Gusano de Morris evidencia propagación automática.</li>
+          <li><strong>1999–2000:</strong> Melissa e ILOVEYOU explotan el correo.</li>
+          <li><strong>2017:</strong> WannaCry masifica ataques de ransomware.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="enlaces">
+        <h3 id="enlaces">Sigue explorando</h3>
+        <p>En cada sección encontrarás definiciones, ejemplos con imágenes accesibles y referencias en <a href="credits.html">Créditos</a>.</p>
+      </section>
+
+      <footer class="article-footer">
+        <p>Autoría: Equipo Grupo 2. Revisión y merge final por el líder.</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Proyecto Realizado por el grupo Nro 2 todos aportamos y trabajando para ti </p>
+    <p><a href="#main">Volver arriba</a></p>
+    <p lang="en">Contacto: <a href="mailto:equipo@example.com">quierohacerplatitaconmipoderosogrupoNro2@losmascapos.com</a></p>
+    quierohacerplatitaconmipoderosogrupoNro2@losmascapos.com  </a></p>
+  </footer>
+</body>
+</html>
